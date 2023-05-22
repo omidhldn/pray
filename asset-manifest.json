@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/pray/static/css/main.073c9b0a.css",
-    "main.js": "/pray/static/js/main.db24cea7.js",
-    "static/media/logo.svg": "/pray/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/pray/static/css/main.d73ab204.css",
+    "main.js": "/pray/static/js/main.431e2d0d.js",
     "index.html": "/pray/index.html",
-    "main.073c9b0a.css.map": "/pray/static/css/main.073c9b0a.css.map",
-    "main.db24cea7.js.map": "/pray/static/js/main.db24cea7.js.map"
+    "static/media/emoji-smile.svg": "/pray/static/media/emoji-smile.c5288b5767f4a2899ac54af519feefac.svg",
+    "main.d73ab204.css.map": "/pray/static/css/main.d73ab204.css.map",
+    "main.431e2d0d.js.map": "/pray/static/js/main.431e2d0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.db24cea7.js"
+    "static/css/main.d73ab204.css",
+    "static/js/main.431e2d0d.js"
   ]
 }
