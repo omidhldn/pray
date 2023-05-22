@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/pray/static/css/main.d73ab204.css",
+    "main.css": "/pray/static/css/main.221627ff.css",
     "main.js": "/pray/static/js/main.431e2d0d.js",
     "index.html": "/pray/index.html",
     "static/media/emoji-smile.svg": "/pray/static/media/emoji-smile.c5288b5767f4a2899ac54af519feefac.svg",
-    "main.d73ab204.css.map": "/pray/static/css/main.d73ab204.css.map",
+    "main.221627ff.css.map": "/pray/static/css/main.221627ff.css.map",
     "main.431e2d0d.js.map": "/pray/static/js/main.431e2d0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73ab204.css",
+    "static/css/main.221627ff.css",
     "static/js/main.431e2d0d.js"
   ]
 }
