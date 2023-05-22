@@ -1,35 +1,57 @@
-import './App.css';
-import Pray from './components/Pray';
+import { useState } from "react";
+import "./App.css";
+import Pray from "./components/Pray";
 
 const DUMMY__INFO = [
   {
-    title:"صبح",
-    bound:"2"
+    id: "p_0",
+    title: "صبح",
+    bound: "2",
   },
   {
-    title:"ظهر",
-    bound:"4"
+    id: "p_1",
+    title: "ظهر",
+    bound: "4",
   },
   {
-    title:"عصر",
-    bound:"4"
+    id: "p_2",
+    title: "عصر",
+    bound: "4",
   },
   {
-    title:"مغرب",
-    bound:"3"
+    id: "p_3",
+    title: "مغرب",
+    bound: "3",
   },
   {
-    title:"عشاء",
-    bound:"4"
+    id: "p_4",
+    title: "عشاء",
+    bound: "4",
   },
 ];
 
 function App() {
+  const [info, setInfo] = useState("آغاز");
+  const liftUpInfoHandler = (info) => {
+    if (
+      (info?.id === "p_0" && info?.rakat >= 2) ||
+      (info?.id === "p_1" && info?.rakat >= 4) ||
+      (info?.id === "p_2" && info?.rakat >= 4) ||
+      (info?.id === "p_3" && info?.rakat >= 3) ||
+      (info?.id === "p_4" && info?.rakat >= 4)
+    ) {
+      setInfo("اتمام");
+      return;
+    }
+    setInfo(`${info?.namaz}: ${info?.rakat}`);
+  };
+
   return (
-    <div className='container'>
-      {/* <Pray title="صبح" bound='2'/> */}
-      {/* <Pray data={DUMMY__INFO[0]}/> */}
-      {DUMMY__INFO.map((el,index) => <Pray key={index} data={el}/>)}
+    <div className="container">
+      <h1>{info}</h1>
+      {DUMMY__INFO.map((el) => (
+        <Pray key={el.id} data={el} onGetInfo={liftUpInfoHandler} />
+      ))}
     </div>
   );
 }
