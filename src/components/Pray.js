@@ -7,7 +7,13 @@ const Pray = (props) => {
 
   const incrementHandler = (event) => {
     event.preventDefault();
-    setRakat(prevState => prevState + 1);
+    if(rakat < (props.data.bound - 1)){
+      setRakat(prevState => prevState + 1);
+    }else{
+      setRakat(0);
+    }
+
+
     props.onGetInfo({
       namaz:props.data.title,
       rakat:(+rakat+1),

@@ -40,7 +40,7 @@ function App() {
       (info?.id === "p_3" && info?.rakat >= 3) ||
       (info?.id === "p_4" && info?.rakat >= 4)
     ) {
-      setInfo("اتمام");
+      setInfo(`اتمام ${info?.namaz}`);
       return;
     }
     setInfo(`${info?.namaz}: ${info?.rakat}`);
